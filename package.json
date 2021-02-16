@@ -8,18 +8,18 @@
     "start": "next start",
     "lint": "eslint src"
   },
-  "dependencies": {
-    "next": "^10.0.6",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "src/**/*": ["yarn lint --fix"]
+  },
+  "dependencies": {
+    "next": "^10.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.25",
@@ -39,7 +39,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "husky": "^5.0.9",
+    "husky": "4",
     "lint-staged": "^10.5.4",
     "pinst": "^2.1.4",
     "prettier": "^2.2.1",
