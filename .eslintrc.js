@@ -2,6 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
+    node: true,
   },
   settings: {
     react: {
@@ -41,5 +43,12 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-param-reassign': 'off',
     'no-console': ['warn', { allow: ['tron'] }],
+    'import/extensions': [
+      'warn',
+      {
+        extension: 'never',
+      },
+    ],
+    'import/no-unresolved': ['off', { caseSensitive: false }],
   },
 };
