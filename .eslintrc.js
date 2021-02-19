@@ -50,5 +50,13 @@ module.exports = {
       },
     ],
     'import/no-unresolved': ['off', { caseSensitive: false }],
+    'react/jsx-props-no-spreading': [
+      0,
+      {
+        html: 'ignore',
+        custom: 'ignore',
+        explicitSpread: 'ignore',
+      },
+    ],
   },
 };
