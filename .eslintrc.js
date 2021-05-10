@@ -49,6 +49,7 @@ module.exports = {
         extension: 'never',
       },
     ],
+    'import/no-extraneous-dependencies': ['off'],
     'import/no-unresolved': ['off', { caseSensitive: false }],
     'react/jsx-props-no-spreading': [
       0,
